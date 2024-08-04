@@ -1,3 +1,5 @@
+SpringBoot, QueryDSL, Keycloak, JPA, Hibernate
+
 **Modelo de Proyecto recomendado para los backend**
 
 ## Antecedentes
