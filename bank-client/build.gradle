@@ -35,5 +35,9 @@ dependencies {
     implementation 'org.hibernate:hibernate-annotations'
     implementation 'commons-beanutils:commons-beanutils'
 
-
+    //-------------------------TEST-----------------------
+    testImplementation group: 'junit', name: 'junit'
+    testImplementation group: 'org.mockito', name: 'mockito-core'
+    testImplementation 'com.github.javafaker:javafaker:1.0.2'
+    testImplementation 'org.mockito:mockito-inline'
 }

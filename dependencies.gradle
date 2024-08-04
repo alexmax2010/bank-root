@@ -70,5 +70,9 @@ dependencyManagement {
         dependency("org.hibernate:hibernate-entitymanager:5.4.9.Final")
         dependency("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.9")
 
+        dependency("org.mockito:mockito-inline:5.2.0")
+
+
+
     }
 }
