@@ -1,0 +1,400 @@
+{
+	"info": {
+		"_postman_id": "5331eb94-70a7-4dc2-8fae-afd809612357",
+		"name": "BANK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1922650"
+	},
+	"item": [
+		{
+			"name": "person",
+			"item": [
+				{
+					"name": "api/v1/persons",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BTOKENKEY}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"personId\": \"1717031379\",\r\n    \"name\": \"ALEX\",\r\n    \"address\": \"QUITO\",\r\n    \"phone\": \"0980395094\",\r\n    \"birtDate\": \"1990-04-15\",\r\n    \"gender\": \"F\",\r\n    \"user\": {\r\n        \"userName\": \"alexmax2010\",\r\n        \"password\": \"123\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ENVIRONMENT}}/bankServices/api/v1/persons",
+							"host": [
+								"{{ENVIRONMENT}}"
+							],
+							"path": [
+								"bankServices",
+								"api",
+								"v1",
+								"persons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/v1/persons",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BTOKENKEY}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ENVIRONMENT}}/bankServices/api/v1/persons/1717031379",
+							"host": [
+								"{{ENVIRONMENT}}"
+							],
+							"path": [
+								"bankServices",
+								"api",
+								"v1",
+								"persons",
+								"1717031379"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/v1/persons",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BTOKENKEY}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"personId\": \"1717031379\",\r\n    \"name\": \"ALEX\",\r\n    \"address\": \"QUITO\",\r\n    \"phone\": \"0980395094\",\r\n    \"gender\": \"F\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ENVIRONMENT}}/bankServices/api/v1/persons",
+							"host": [
+								"{{ENVIRONMENT}}"
+							],
+							"path": [
+								"bankServices",
+								"api",
+								"v1",
+								"persons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/v1/persons",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BTOKENKEY}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ENVIRONMENT}}/bankServices/api/v1/persons/1717031379",
+							"host": [
+								"{{ENVIRONMENT}}"
+							],
+							"path": [
+								"bankServices",
+								"api",
+								"v1",
+								"persons",
+								"1717031379"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "account",
+			"item": [
+				{
+					"name": "api/v1/accounts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BTOKENKEY}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"personId\": \"1717031379\",\r\n    \"type\": \"A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ENVIRONMENT}}/bankServices/api/v1/accounts",
+							"host": [
+								"{{ENVIRONMENT}}"
+							],
+							"path": [
+								"bankServices",
+								"api",
+								"v1",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/accounts/1717031379",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BTOKENKEY}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ENVIRONMENT}}/bankServices/api/v1/accounts/1717031379",
+							"host": [
+								"{{ENVIRONMENT}}"
+							],
+							"path": [
+								"bankServices",
+								"api",
+								"v1",
+								"accounts",
+								"1717031379"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "transacction",
+			"item": [
+				{
+					"name": "/api/v1/transactions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BTOKENKEY}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountId\": 8,\r\n    \"type\": \"D\",\r\n    \"movement\": 500.00,\r\n    \"date\": \"2024-08-04\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ENVIRONMENT}}/bankServices/api/v1/transactions",
+							"host": [
+								"{{ENVIRONMENT}}"
+							],
+							"path": [
+								"bankServices",
+								"api",
+								"v1",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/reports",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BTOKENKEY}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ENVIRONMENT}}/bankServices/api/v1/reports?personId=1717031379&startDate=2024-08-04&endDate=2024-08-04",
+							"host": [
+								"{{ENVIRONMENT}}"
+							],
+							"path": [
+								"bankServices",
+								"api",
+								"v1",
+								"reports"
+							],
+							"query": [
+								{
+									"key": "personId",
+									"value": "1717031379"
+								},
+								{
+									"key": "startDate",
+									"value": "2024-08-04"
+								},
+								{
+									"key": "endDate",
+									"value": "2024-08-04"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);\r",
+							"pm.globals.set(\"BTOKENKEY\", jsonData.access_token);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "BANK-WEB",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "badmin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "badmin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{ENVIRONMENT}}/auth/realms/BANK/protocol/openid-connect/token",
+					"host": [
+						"{{ENVIRONMENT}}"
+					],
+					"path": [
+						"auth",
+						"realms",
+						"BANK",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
