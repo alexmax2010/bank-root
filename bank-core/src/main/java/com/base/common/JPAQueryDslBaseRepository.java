@@ -20,7 +20,7 @@ import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport
  * Repository base with support querydsl.
  *
  * @param <T> Entity
- * @author components on 2022/09/26
+ * @author alex on 2022/09/26
  * @version 1.0
  */
 public abstract class JPAQueryDslBaseRepository<T> extends QuerydslRepositorySupport implements
@@ -40,7 +40,7 @@ public abstract class JPAQueryDslBaseRepository<T> extends QuerydslRepositorySup
      * Creates a new {@link QuerydslRepositorySupport} instance for the given domain type.
      *
      * @param domainClass must not be {@literal null}.
-     * @author components on 2022/09/26
+     * @author alex on 2022/09/26
      */
     public JPAQueryDslBaseRepository(Class<T> domainClass) {
         super(domainClass);
@@ -80,7 +80,7 @@ public abstract class JPAQueryDslBaseRepository<T> extends QuerydslRepositorySup
      * @param count boolean
      * @param <Q> entity
      * @return Page
-     * @author components on 2022/09/26
+     * @author alex on 2022/09/26
      */
     protected <Q> Page<Q> findPagedData(JPQLQuery<Q> query, Pageable pageable, boolean count) {
         long totalSupplier = count ? query.fetchCount() : 0L;

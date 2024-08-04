@@ -1,4 +1,4 @@
-**Modelo de Proyecto recomendado para los backend de Kruger**
+**Modelo de Proyecto recomendado para los backend**
 
 ## Antecedentes
 El proyecto está pensado para desplegar como un jar de forma independiente teniendo para esto el servidor de tomcat embebido, por lo que al construir se generara un **jar**.

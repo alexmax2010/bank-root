@@ -17,7 +17,7 @@ import org.hibernate.annotations.GenericGenerator;
 /**
  * Transaction entity.
  *
- * @author components on 03/08/2024.
+ * @author alex on 03/08/2024.
  * @version 1.0
  */
 @Getter

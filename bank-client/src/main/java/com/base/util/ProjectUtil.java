@@ -8,7 +8,7 @@ import org.apache.commons.beanutils.PropertyUtils;
 /**
  * ProjectUtil.
  *
- * @author components on 8/9/2022
+ * @author alex on 8/9/2022
  * @version 1.0
  */
 @Slf4j

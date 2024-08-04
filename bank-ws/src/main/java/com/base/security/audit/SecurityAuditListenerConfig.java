@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 /**
  * SecurityAuditListenerConfig.
  *
- * @author components on 13/10/2022.
+ * @author alex on 13/10/2022.
  * @version 1.0
  */
 

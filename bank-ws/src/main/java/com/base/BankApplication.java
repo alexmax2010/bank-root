@@ -16,7 +16,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 /**
  * BankApplication.
  *
- * @author components on 6/8/2022.
+ * @author alex on 6/8/2022.
  * @version 1.0
  */
 @SpringBootApplication(scanBasePackages = { "com.base" })
@@ -31,7 +31,7 @@ public class BankApplication implements WebMvcConfigurer {
     /**
      * ObjectMapper.
      *
-     * @author components on 01/07/2021
+     * @author alex on 01/07/2021
      * @return ObjectMapper
      */
     @Bean

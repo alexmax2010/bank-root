@@ -4,7 +4,7 @@ package com.base.common;
  * Repository interface with querydsl.
  *
  * @param <T> Entity
- * @author components on 2022/09/26
+ * @author alex on 2022/09/26
  * @version 1.0
  */
 public interface IQueryDslBaseRepository<T> {

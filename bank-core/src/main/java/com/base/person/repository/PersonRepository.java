@@ -16,7 +16,7 @@ import org.springframework.stereotype.Repository;
 /**
  * PersonRepository.
  *
- * @author components on 8/9/2022.
+ * @author alex on 8/9/2022.
  * @version 1.0
  */
 @Lazy

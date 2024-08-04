@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * KeyCloakSecurityResolver.
  *
- * @author components on 2022/09/26
+ * @author alex on 2022/09/26
  * @version 1.0
  * @since 1.0.0
  */

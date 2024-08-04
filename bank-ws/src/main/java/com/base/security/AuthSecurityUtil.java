@@ -10,7 +10,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 /**
  * AuthSecurityUtil.
  *
- * @author components on 2022/09/26
+ * @author alex on 2022/09/26
  * @version 1.0
  * @since 1.0.0
  */
@@ -20,7 +20,7 @@ public final class AuthSecurityUtil {
      * Get logged in user keycloak.
      *
      * @return UserVo
-     * @author components on 2022/09/26
+     * @author alex on 2022/09/26
      */
     public static UserVo getUserLogin() {
         KeycloakAuthenticationToken authentication =
@@ -34,7 +34,7 @@ public final class AuthSecurityUtil {
      *
      * @param principal Principal
      * @return UserVo
-     * @author components on 2022/09/26
+     * @author alex on 2022/09/26
      */
     public static UserVo getUser(Principal principal) {
         if (principal instanceof KeycloakPrincipal) {

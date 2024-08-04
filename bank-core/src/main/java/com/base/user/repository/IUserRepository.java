@@ -6,7 +6,7 @@ import com.base.user.entity.UserEntity;
 /**
  * IUserRepository.
  *
- * @author Kruger on 3/8/2024.
+ * @author alex on 3/8/2024.
  * @version 1.0
  */
 public interface IUserRepository extends IQueryDslBaseRepository<UserEntity> {

@@ -9,7 +9,7 @@ import lombok.experimental.SuperBuilder;
 /**
  * BaseAuditableVO.
  *
- * @author components on 16/02/2022
+ * @author alex on 16/02/2022
  * @version 1.0
  * @since 1.0.0
  */

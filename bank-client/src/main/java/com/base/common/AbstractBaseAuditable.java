@@ -21,7 +21,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 /**
  * Abstract auditable.
  *
- * @author components on 2022/09/26
+ * @author alex on 2022/09/26
  * @version 1.0
  */
 @Getter

@@ -21,7 +21,7 @@ import org.springframework.security.web.authentication.session.SessionAuthentica
 /**
  * KeyCloakSecurityConfig.
  *
- * @author components on 2022/09/26
+ * @author alex on 2022/09/26
  * @version 1.0
  * @since 1.0.0
  */
@@ -47,7 +47,7 @@ public class KeyCloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter
      *
      * @param auth AuthenticationManagerBuilder
      * @throws Exception error
-     * @author components on 2022/09/26
+     * @author alex on 2022/09/26
      */
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
@@ -69,7 +69,7 @@ public class KeyCloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter
      * KeycloakConfigResolver.
      *
      * @return KeycloakConfigResolver
-     * @author components on 2022/09/26
+     * @author alex on 2022/09/26
      */
     @Bean
     public KeycloakConfigResolver keycloakConfigResolver() {

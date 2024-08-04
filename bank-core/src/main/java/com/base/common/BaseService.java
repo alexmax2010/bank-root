@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
  *
  * @param <T> class
  * @param <R> repository
- * @author components on 2022/09/26
+ * @author alex on 2022/09/26
  */
 public class BaseService<T, R extends IQueryDslBaseRepository<T>> implements IBaseService<T> {
 
@@ -20,7 +20,7 @@ public class BaseService<T, R extends IQueryDslBaseRepository<T>> implements IBa
      * Constructor.
      *
      * @param repository repository
-     * @author components on 2022/09/26
+     * @author alex on 2022/09/26
      */
     public BaseService(R repository) {
         this.repository = repository;

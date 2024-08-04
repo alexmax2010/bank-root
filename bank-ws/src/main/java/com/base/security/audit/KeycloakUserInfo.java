@@ -9,7 +9,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 /**
  * KeycloakUserInfo.
  *
- * @author components on 13/10/2022.
+ * @author alex on 13/10/2022.
  * @version 1.0
  */
 public class KeycloakUserInfo implements IKeycloakUserInfo {

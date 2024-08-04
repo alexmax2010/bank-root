@@ -3,7 +3,7 @@ package com.base.exception;
 /**
  * Base Exception Class.
  *
- * @author components on 8/9/2022.
+ * @author alex on 8/9/2022.
  * @version 1.0.0
  */
 public class BaseException extends Exception {

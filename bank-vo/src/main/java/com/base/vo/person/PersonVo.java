@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 /**
  * PersonVo.
  *
- * @author components on 8/9/2022.
+ * @author alex on 8/9/2022.
  * @version 1.0
  */
 @Data

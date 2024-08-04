@@ -3,7 +3,7 @@ package com.base.exception;
 /**
  * GlobalControllerExceptionHandler.
  *
- * @author Kruger on 3/8/2024.
+ * @author alex on 3/8/2024.
  * @version 1.0
  */
 
@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 /**
  * Global Handler to generic or business exceptions.
  *
- * @author components on 2022/04/05.
+ * @author alex on 2022/04/05.
  * @version 1.0
  */
 @Slf4j

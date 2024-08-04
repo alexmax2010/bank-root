@@ -8,7 +8,7 @@ import com.base.vo.person.PersonVo;
 /**
  * Person repository specification.
  *
- * @author components on 2022/09/08.
+ * @author alex on 2022/09/08.
  * @version 1.0
  */
 public interface IPersonRepository extends IQueryDslBaseRepository<PersonEntity> {
