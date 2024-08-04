@@ -1,0 +1,12 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'bank-root'
+include 'bank-client'
+include 'bank-core'
+include 'bank-ws'
+include 'bank-vo'
+
+

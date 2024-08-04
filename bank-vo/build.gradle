@@ -1,0 +1,7 @@
+dependencies {
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    compile 'javax.validation:validation-api'
+    compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml'
+
+}
