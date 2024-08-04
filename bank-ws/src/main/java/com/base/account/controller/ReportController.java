@@ -1,7 +1,9 @@
 package com.base.account.controller;
 
+import java.util.Date;
 import javax.validation.constraints.NotBlank;
 import com.base.account.service.IAccountService;
+import com.base.util.DateUtil;
 import com.base.vo.common.BaseResponseVo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -39,9 +41,13 @@ public class ReportController {
      */
     @GetMapping(path = "")
     @Operation(summary = "Get accounts")
-    public ResponseEntity<BaseResponseVo> get(@RequestParam @NotBlank String personId) {
+    public ResponseEntity<BaseResponseVo> get(@RequestParam @NotBlank String personId,
+        @RequestParam @NotBlank String startDate, @RequestParam @NotBlank String endDate) {
+        Date startD = DateUtil.getDate(startDate);
+        Date endD = DateUtil.getDate(endDate);
         return ResponseEntity.ok(
-            BaseResponseVo.builder().data(this.accountService.getReport(personId)).build());
+            BaseResponseVo.builder().data(this.accountService.getReport(personId, startD, endD))
+                .build());
     }
 
 }

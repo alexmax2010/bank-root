@@ -1,5 +1,6 @@
 package com.base.account.service;
 
+import java.util.Date;
 import java.util.List;
 import com.base.account.entity.AccountEntity;
 import com.base.account.repository.IAccountRepository;
@@ -70,14 +71,14 @@ public class AccountService extends BaseService<AccountEntity, IAccountRepositor
      * {@inheritDoc}
      */
     @Override
-    public List<AccountVo> getReport(String personId) {
+    public List<AccountVo> getReport(String personId, Date startDate, Date endDate) {
         List<AccountVo> accounts = this.repository.get(personId);
         if (CollectionUtils.isEmpty(accounts)) {
             return accounts;
         }
         for (AccountVo account : accounts) {
             List<TransactionVo> transactions = this.transactionRepository.getByAccount(
-                account.getAccountId());
+                account.getAccountId(), startDate, endDate);
             account.setTransactions(transactions);
         }
         return accounts;

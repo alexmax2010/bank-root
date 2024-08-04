@@ -1,5 +1,6 @@
 package com.base.transaction.repository;
 
+import java.util.Date;
 import java.util.List;
 import com.base.common.IQueryDslBaseRepository;
 import com.base.transaction.entity.TransactionEntity;
@@ -19,6 +20,6 @@ public interface ITransactionRepository extends IQueryDslBaseRepository<Transact
      * @param accountId accountId
      * @return List TransactionVo
      */
-    List<TransactionVo> getByAccount(Integer accountId);
+    List<TransactionVo> getByAccount(Integer accountId, Date startDate, Date endDate);
 
 }

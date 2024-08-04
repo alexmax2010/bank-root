@@ -1,7 +1,9 @@
 package com.base.util;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 /**
@@ -22,12 +24,24 @@ public final class DateUtil {
     /**
      * Obtiene la fecha actual LocalDateTime.
      *
-     * @author alex on 07/03/2022
      * @return Date
+     * @author alex on 07/03/2022
      */
     public static Date currentDate() {
         return Date.from(LocalDateTime.now().atZone(ZoneId.systemDefault()).toInstant());
-
-
     }
+
+    /**
+     * Get date format.
+     *
+     * @param date date
+     * @return Date
+     */
+    public static Date getDate(String date) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate startD = LocalDate.parse(date, formatter);
+        return Date.from(startD.atStartOfDay(ZoneId.systemDefault()).toInstant());
+    }
+
+
 }

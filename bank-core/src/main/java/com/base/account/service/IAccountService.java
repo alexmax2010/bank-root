@@ -1,5 +1,6 @@
 package com.base.account.service;
 
+import java.util.Date;
 import java.util.List;
 import com.base.account.entity.AccountEntity;
 import com.base.common.IBaseService;
@@ -44,6 +45,6 @@ public interface IAccountService extends IBaseService<AccountEntity> {
      * @param personId person id
      * @return List AccountVo
      */
-    List<AccountVo> getReport(String personId);
+    List<AccountVo> getReport(String personId, Date startDate, Date endDate);
 
 }
