@@ -37,7 +37,7 @@ public class TransactionEntity extends AbstractBaseAuditable<String> {
     private String transactionId;
 
     @Column(name = "ACCOUNT_ID")
-    private String accountId;
+    private Integer accountId;
 
     @Column(name = "DATE")
     private Date date;
@@ -50,6 +50,9 @@ public class TransactionEntity extends AbstractBaseAuditable<String> {
 
     @Column(name = "AVAILABLE_BALANCE")
     private BigDecimal availableBalance;
+
+    @Column(name = "TYPE")
+    private String type;
 
     /**
      * Get entity id.
