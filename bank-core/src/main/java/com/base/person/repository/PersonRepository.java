@@ -2,6 +2,7 @@ package com.base.person.repository;
 
 import static com.base.person.entity.QPersonEntity.personEntity;
 import static com.base.user.entity.QUserEntity.userEntity;
+import static com.querydsl.core.types.Projections.bean;
 import com.base.common.JPAQueryDslBaseRepository;
 import com.base.person.entity.PersonEntity;
 import com.base.vo.person.PersonUpdateVo;
