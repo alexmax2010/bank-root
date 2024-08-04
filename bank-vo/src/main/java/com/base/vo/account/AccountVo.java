@@ -1,7 +1,9 @@
 package com.base.vo.account;
 
 import java.math.BigDecimal;
+import java.util.List;
 import javax.validation.constraints.NotBlank;
+import com.base.vo.transaction.TransactionVo;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -25,4 +27,5 @@ public class AccountVo {
     @NotBlank
     private String type;
     private BigDecimal initialBalance;
+    private List<TransactionVo> transactions;
 }

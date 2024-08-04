@@ -4,11 +4,15 @@ import java.util.List;
 import com.base.account.entity.AccountEntity;
 import com.base.account.repository.IAccountRepository;
 import com.base.common.BaseService;
+import com.base.transaction.repository.ITransactionRepository;
 import com.base.util.ProjectUtil;
 import com.base.vo.account.AccountVo;
+import com.base.vo.transaction.TransactionVo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.CollectionUtils;
 
 /**
  * AccountService.
@@ -21,6 +25,10 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class AccountService extends BaseService<AccountEntity, IAccountRepository> implements
     IAccountService {
+
+    @Lazy
+    @Autowired
+    private ITransactionRepository transactionRepository;
 
     /**
      * Constructor.
@@ -56,5 +64,22 @@ public class AccountService extends BaseService<AccountEntity, IAccountRepositor
     @Override
     public List<AccountVo> get(String personId) {
         return this.repository.get(personId);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public List<AccountVo> getReport(String personId) {
+        List<AccountVo> accounts = this.repository.get(personId);
+        if (CollectionUtils.isEmpty(accounts)) {
+            return accounts;
+        }
+        for (AccountVo account : accounts) {
+            List<TransactionVo> transactions = this.transactionRepository.getByAccount(
+                account.getAccountId());
+            account.setTransactions(transactions);
+        }
+        return accounts;
     }
 }

@@ -37,4 +37,13 @@ public interface IAccountService extends IBaseService<AccountEntity> {
      */
     List<AccountVo> get(String personId);
 
+
+    /**
+     * Get accounts and transactions.
+     *
+     * @param personId person id
+     * @return List AccountVo
+     */
+    List<AccountVo> getReport(String personId);
+
 }
